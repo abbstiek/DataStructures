@@ -1,0 +1,31 @@
+//Abygail Stiekman
+//10/12/2016
+//COP4530
+
+Asymptotic analysis for 'reverse' function implementation:
+
+Pseudo code:
+
+reverse()
+begin
+	current := head
+
+	while current <> NULL // repeated N time - N is size of the list
+	begin
+	  next := current.next
+	  swap (current.next and current.prev)
+	  current := next
+	end
+
+	swap (head and tail)
+end
+
+Summary:
+
+Because summary in the worst case can be implemented via 3 assigments and single 
+temporary value the inner loop single round takes 5 operations.
+Total number of operations is 4 + 5 * N and we need just 2 additional variables in 
+memory (current and temp for swap implementation).
+
+Complexity of this function is O(N) in big-O notation.
+

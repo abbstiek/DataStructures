@@ -1,0 +1,10 @@
+//Abygail Stiekman 10/24/2016
+//COP 4530 Assignment #3
+
+The complexity of resizing a vector to zero is linear in the number 
+of elements currently stored in the vector. Setting vector's size to 
+zero offers no real advantage over calling clear() - the two are 
+basically the same.
+
+However, the implementation gives you an O(1) complexity for primitive types by 
+employing partial template specialization.

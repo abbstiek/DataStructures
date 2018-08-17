@@ -1,0 +1,20 @@
+//Abygail Stiekman
+//11.07.2016
+//Analysis
+
+
+
+O(h) would refer to a binary tree that is sorted but not balanced.
+O(logn) would refer to a tree that is sorted and balanced.
+O(n) would be worst case time complexity.
+If your binary tree is balanced so that every node has exactly two 
+child nodes, then the number of nodes in the tree will be exactly N 
+= 2h - 1, so the height is the logarithm of the number of elements 
+(and similarly for any complete n-ary tree).
+
+An arbitrary, unconstrained tree may look totally different, though; 
+for instance, it could just have one node at every level, so N = h 
+in that case. So the height is the more general measure, as it 
+relates to actual comparisons, but under the additional assumption 
+of balance you can express the height as the logarithm of the number 
+of elements.
